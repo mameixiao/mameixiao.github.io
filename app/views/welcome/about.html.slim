@@ -1,0 +1,8 @@
+- content_for(:title) do
+  |关于 - 个人资料
+
+h2
+  = @self_info.title
+.show-background
+  .content.markdown
+    == @self_info.content_html
